@@ -1,0 +1,62 @@
+TO DO:
+======
+
+(In no particular order)
+
+- provide HTML linkage disequilibrium table
+
+- consider enhancing LD tables with HWE on diagonal, potentially use
+  lower trangular are to colorie on a second veriabe, e.g. p-value on
+  top, D' on the bottom.
+
+- create LD.haplotype function.
+
+- chromosome, chromosome.map
+
+- Transmission/Disequilibrium Test
+
+- interface to genehunter
+
+- Haplotype estimation via EM and Gibbs/MCMC
+
+- Gene-map displays:  given a list of genes, and their location on the chromosome, plot the markers along the chromosome.
+  You know, something like
+
+	   m1   m2      m4          m6
+	---|----|-|------|-|--------|
+	          m3       m5
+
+- Quantitative and categorical gene-map plots.  The above with a plot above it, something like
+
+
+	Disequlibrium:
+			                   |
+			   |             | o
+			   o    | |      o |
+			   |    o o      |          |
+			        | |                 o
+			                            |
+			   m1   m2      m4          m6
+			---|----|-|------|-|--------|
+		          m3       m5
+
+* import/export scripts to the linkage .par and .pre files
+
+* easy grouping of genotypes, like
+
+
+DONE
+====
+
+  DONE - update documentation for HWE.test
+
+  DONE  - re-write HWE test to be more general. (It currently supports only
+two alleles)
+
+  DONE - Additional HWE test algorithms(permutation, exact)	
+
+  Accomplished by making HWE test a wrapper for chisq.test.
+
+  DONE - compute/test pairwise disequlibrium
+
+  DONE - Disequilibrium estimation & testing 
